@@ -1,5 +1,6 @@
 assume-role-upgrade() {
   echo "Downloading assume-role binary"
+  mkdir -p ~/.local/bin/
   curl -L -o "$HOME/.local/bin/__assume_role" "https://github.com/xLasercut/aws-assume-role/releases/latest/download/assume-role-linux"
   chmod +x "$HOME/.local/bin/__assume_role"
 }
